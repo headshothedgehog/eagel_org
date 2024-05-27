@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(214, 193, 160);
+    font-size: 1.5em;
+    color: #5b5b5b;
+}
+
+#home {
+    overflow: hidden;
+}
+
+.topnav {
+    background-color: #333;
+    /*overflow: hidden;*/
+    display: flex;
+    align-items: center;
+}
+
+.topnav img {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    margin: auto 0em;
+    border-radius: 10%;
+}
+
+.topnav .navlink:hover {
+    background-color: #555;
+}
+
+.topnav .navlink {
+    text-align: center;
+    color: #fff;
+    padding: .4rem .4rem;
+    float: left;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Arial;
+    border-radius: .4rem;
+}
+
+.topnav .navlink.active {
+    background-color: #444;
+}
+
+.topnav .navlink.active:hover {
+    background-color: #666;
+}
+
+/*
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+*/
+
+.subnavlink {
+    text-decoration: underline;
+}
+
+.subnav-content {
+    font-size: 1.2rem;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+    clear: left;
+    top: 2.5rem;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: .4rem;
+    border-radius: .4rem;
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+}
+
+.subnav-content a:hover {
+    background-color: #555;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    padding: 0;
+    padding-top: 2.8rem;
+}
+
+.fullImg {
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.gameScreen {
+    border: 1px solid #000000;
+    width: 90%;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#gameScreenIceBreaker {
+    max-height: 85vh;
+    max-width: 85vh;
+    aspect-ratio: 1/1;
+}
+
+#gameScreenMemory {
+    max-height: 75vh;
+    max-width: 100vh;
+    aspect-ratio: 4/3;
+}
+
+.invisible {
+    display: none;
+}
+
+.screenWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.textpage {
+    margin: 1em 2em;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 23%;
+}
+
+.blogGallery {
+    box-sizing: border-box;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+#slide {
+    display: block;
+    text-align: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 2.8rem;
+    margin: .1rem;
+    background-color: #00000090;
+    border-radius: 10px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #444;
+    padding: 2px 16px;
+    color: #fff;
+}
+
+#slide img {
+    max-height: 73vh;
+    max-width: 100%;
+}
+
+#caption {
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 96%;
+    }
+}
+
+.propaganda {
+    margin: .5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    font-size: .8rem;
+    line-height: 1.5;
+    padding: .5rem 1rem;
+    clear: left;
+    margin-top: 1rem;
+}
+
+.textimg {
+    width: 15rem;
+    max-width: 50%;
+    margin: 1rem;
+}
+
+@media screen and (orientation:portrait) and (min-width:512px) {
+    .topnav .navlink {
+        font-size: 2rem;
+    }
+
+    .topnav img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    main {
+        padding-top: 4rem;
+    }
+
+    #numbertext {
+        top: 3.8rem;
+    }
+
+    .prev,
+    .next {
+        top: 10rem;
+        font-size: 40px;
+    }
+
+    .responsive {
+        width: 47%;
+    }
+
+    figcaption {
+        font-size: 2.5rem;
+    }
+}
