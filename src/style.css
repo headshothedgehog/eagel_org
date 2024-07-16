@@ -159,6 +159,7 @@ textarea {
     /*overflow: hidden;*/
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .topnav img {
