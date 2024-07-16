@@ -6,9 +6,9 @@
     <meta http-equiv='X-UA-Compatible' main='IE=edge'>
     <title>Der Eagel-Fanclub</title>
     <meta name='viewport' main='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='../src/style.css'>
-    <link rel="shortcut icon" type="image/jpg" href="../src/eagel64x64.png">
-    <script src='../main.js'></script>
+    <link rel='stylesheet' href='/src/style.css'>
+    <link rel="shortcut icon" type="image/jpg" href="/src/eagel64x64.png">
+    <script src='/main.js'></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N3LVQJ0Q9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -19,26 +19,131 @@
     </script>
 </head>
 
-<body id="home">
-    <nav class="topnav sticky">
-        <a class="navlink" href="../home"><img src="../src/eagel64x64.png" /></a>
-        <a class="navlink active" href="../home">Home</a>
-        <a class="navlink" href="../ddoe">Eagel Updates</a>
-        <a class="navlink" href="../grundlagen">Grundlagen</a>
-        <div class="subnav">
-            <div class="navlink"><b>Spiele</b></div>
-            <div class="subnav-content">
-                <a href="../spiele/ice crusher">Ice Crusher</a>
-                <a href="../spiele/memory">Memory</a>
+<body id="home" onload="showNewestDDoE()">
+    <div id="homegrid-container" class="grid-container">
+        <div class="grid-item" id="home-eagel-grid">
+            <!--<img id="home-eagel" src="/src/eagel.jpeg">-->
+            Der Eagel-Fanclub
+        </div>
+        <div class="grid-item homegrid-item home-link-box">
+            <a href="/lore" class="linkbox">
+                Lore
+                <img src="/src/icons/book.png" class="linkbox-img">
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-link-box">
+            <a href="/spiele" class="linkbox">
+                Spiele
+                <img src="/src/icons/dice.png" class="linkbox-img">
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-link-box">
+            <a href="/kunst" class="linkbox">
+                Kunst
+                <img src="/src/icons/img.png" class="linkbox-img">
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-link-box">
+            <a href="/leben" class="linkbox">
+                Leben
+                <img src="/src/icons/heart.png" class="linkbox-img">
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-link-box home-join">
+            <a href="/join" class="linkbox">
+                Beitreten!!1! <span style="font-size: 1rem;">(Es ist sehr gut)</span>
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-ddoe home-ddoe-img">
+            <img src="/src/ddoe3/timetravel.jpeg" id="home-ddoe-img">
+        </div>
+        <div class="grid-item homegrid-item home-ddoe home-ddoe-text">
+            <script src="/src/ddoe3/ddoeData.js"></script>
+            <script src="randomddoe.js"></script>
+            <span id="home-ddoe-textbox">Eagel Update, Day 16=17:<br /><br />
+                <div id="home-ddoe-textdiv">Some critics may say, "Hannes forgot to post yesterday", but those people
+                    weren't as privileged as I was yesterday. For the first time, I was able to watch the Eagel
+                    timetravel. Apparently yesterday and today is actually the same day! Isn't that awesome!!!</div>
+            </span><br />
+            <button id="home-ddoe-button" onclick="randomDDoE()">Zufälliges DDoE</button>
+            <button id="home-ddoe-button" onclick="showNewestDDoE()">Neuestes DDoE</button>
+        </div>
+        <div class="grid-item homegrid-item home-games">
+            <a href="/spiele/ice crusher" class="linkbox">
+                <table>
+                    <tr>
+                        <td>Ice-Crusher</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/src/spiele/Ice Crusher.png" class="linkbox-img"></td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-games">
+            <a href="/spiele/ice crusher" class="linkbox">
+                <table>
+                    <tr>
+                        <td>Memory</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/src/spiele/Memory.png" class="linkbox-img"></td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-news home-news-title">
+            <div>
+                <a href="/leben" class="linkbox">
+                    Neuigkeiten
+                </a>
             </div>
         </div>
-        <a href="../gebote" class="navlink">Gebote</a>
-        <a href="../propaganda" class="navlink">Propaganda</a>
-        <a href="../blog" class="navlink">Blog</a>
-    </nav>
-    <main>
-        <img src="../src/eagel.jpeg" href="../home" class="fullImg" />
-    </main>
+        <div class="grid-item homegrid-item home-news">
+            <a href="/leben/ddoe2" class="linkbox">
+                <table>
+                    <tr>
+                        <td>Daily Dose of Eagel 2</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/src/blog/ddoe2/jet.jpg" class="linkbox-img"></td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-news">
+            <a href="/leben/flyingEagel" class="linkbox">
+                <table>
+                    <tr>
+                        <td>Flugabenteuer</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/src/blog/flyingEagel/frame.png" class="linkbox-img"></td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+        <div class="grid-item homegrid-item home-news">
+            <a href="/leben/ddoe1" class="linkbox">
+                <table>
+                    <tr>
+                        <td>Daily Dose of Eagel 1</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/src/blog/ddoe1/IMG_5841.jpg" class="linkbox-img"></td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+    </div>
 </body>
+
+<footer>
+    <p>
+        <a href="/join" style="color: #fff;">Trete dem Eageltum bei! Es ist sehr gut.</a><br />
+        &copy;
+        <script>document.write(new Date().getFullYear())</script> Eagel
+    </p>
+</footer>
 
 </html>

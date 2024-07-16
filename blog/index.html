@@ -6,8 +6,8 @@
     <meta http-equiv='X-UA-Compatible' main='IE=edge'>
     <title>Blog</title>
     <meta name='viewport' main='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../src/style.css'>
-    <link rel="shortcut icon" type="image/jpg" href="../src/eagel64x64.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/style.css'>
+    <link rel="shortcut icon" type="image/jpg" href="/src/eagel64x64.png">
     <script src='main.js'></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N3LVQJ0Q9"></script>
     <script>
@@ -19,28 +19,27 @@
     </script>
 </head>
 
-<body>
-    <nav class="topnav sticky">
-        <a class="navlink" href="../home"><img src="../src/eagel64x64.png" /></a>
-        <a class="navlink" href="../home">Home</a>
-        <a class="navlink" href="../ddoe">Eagel Updates</a>
-        <a class="navlink" href="../grundlagen">Grundlagen</a>
-        <div class="subnav">
-            <div class="navlink"><b>Spiele</b></div>
-            <div class="subnav-content">
-                <a href="../spiele/ice crusher">Ice Crusher</a>
-                <a href="../spiele/memory">Memory</a>
-            </div>
+<nav class="topnav sticky">
+    <a class="navlink" href="/home"><img src="/src/eagel64x64.png" /></a>
+    <a class="navlink" href="/lore">Lore</a>
+    <a class="navlink" href="/spiele">Spiele</a>
+    <a class="navlink" href="/kunst">Kunst</a>
+    <a class="navlink" href="/leben">Leben</a>
+    <!--<div class="subnav">
+        <div class="navlink"><b>Spiele</b></div>
+        <div class="subnav-content">
+            <a href="/spiele/ice crusher">Ice Crusher</a>
+            <a href="/spiele/memory">Memory</a>
         </div>
-        <a href="../gebote" class="navlink">Gebote</a>
-        <a href="../propaganda" class="navlink">Propaganda</a>
-        <a href="../blog" class="navlink active">Blog</a>
-    </nav>
+    </div>-->
+</nav>
+
+<body>
     <main class="propaganda">
         <fig class="responsive">
             <div class="gallery">
                 <a href="ddoe2">
-                    <img src="../src/blog/ddoe2/jet.jpg" alt="DDOE2.0">
+                    <img src="/src/blog/ddoe2/jet.jpg" alt="DDOE2.0">
                 </a>
                 <figcaption>Daily Dose of Eagel 2.0</figcaption>
             </div>
@@ -48,7 +47,7 @@
         <fig class="responsive">
             <div class="gallery">
                 <a href="flyingEagel">
-                    <img src="../src/blog/flyingEagel/frame.png" alt="Eagel in Modellflugzeug">
+                    <img src="/src/blog/flyingEagel/frame.png" alt="Eagel in Modellflugzeug">
                 </a>
                 <figcaption>Flugabenteuer</figcaption>
             </div>
@@ -56,7 +55,7 @@
         <fig class="responsive">
             <div class="gallery">
                 <a href="ddoe1">
-                    <img src="../src/blog/ddoe1/IMG_5841.jpg" alt="DDOE 1.0">
+                    <img src="/src/blog/ddoe1/IMG_5841.jpg" alt="DDOE 1.0">
                 </a>
                 <figcaption>Daily Dose of Eagel 1.0</figcaption>
             </div>
@@ -64,19 +63,22 @@
         <!--
         <div class="responsive">
             <div class="gallery">
-                <a href="../src/propaganda/">
-                    <img src="../src/propaganda/" alt="">
+                <a href="/src/propaganda/">
+                    <img src="/src/propaganda/" alt="">
                 </a>
                 <div class="desc"></div>
             </div>
         </div>
         -->
     </main>
-    <footer>
-        <p>
-            &copy; 2023 Eagel
-        </p>
-    </footer>
 </body>
+
+<footer>
+    <p>
+        <a href="/join" style="color: #fff;">Trete dem Eageltum bei! Es ist sehr gut.</a><br />
+        &copy;
+        <script>document.write(new Date().getFullYear())</script> Eagel
+    </p>
+</footer>
 
 </html>

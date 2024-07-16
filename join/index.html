@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' main='IE=edge'>
+    <title>Beitreten!</title>
+    <meta name='viewport' main='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/style.css'>
+    <link rel="shortcut icon" type="image/jpg" href="/src/eagel64x64.png">
+    <script src='main.js'></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N3LVQJ0Q9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5N3LVQJ0Q9');
+    </script>
+</head>
+
+<nav class="topnav sticky">
+    <a class="navlink" href="/home"><img src="/src/eagel64x64.png" /></a>
+    <a class="navlink" href="/lore">Lore</a>
+    <a class="navlink" href="/spiele">Spiele</a>
+    <a class="navlink" href="/kunst">Kunst</a>
+    <a class="navlink" href="/leben">Leben</a>
+    <!--<div class="subnav">
+        <div class="navlink"><b>Spiele</b></div>
+        <div class="subnav-content">
+            <a href="/spiele/ice crusher">Ice Crusher</a>
+            <a href="/spiele/memory">Memory</a>
+        </div>
+    </div>-->
+</nav>
+
+<body>
+    <main class="join">
+        <form class="join-form">
+            <table class="form-table">
+                <tr>
+                    <td><label>Echter Name:</label></td>
+                    <td><input type="text" id="join-realname"></td>
+                </tr>
+                <tr>
+                    <td><label>Deckname für<br />das Eageltum:</label></td>
+                    <td><input type="text" id="join-eagelname"></td>
+                </tr>
+                <tr>
+                    <td><label>Persönliches<br />Glaubensstatement:</label></td>
+                    <td><textarea type="text" id="join-statement"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Newsletter</label></td>
+                    <td><input type="checkbox" id="join-newsletter" style="transform: scale(1.7);" checked="checked">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" class="join-button" onclick="sendEmail()">Abschicken</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script>
+            function sendEmail() {
+                var realname = document.getElementById('join-realname').value;
+                var eagelname = document.getElementById('join-eagelname').value;
+                var statement = document.getElementById('join-statement').value;
+                var newsletter = document.getElementById('join-newsletter').checked;
+
+                var mailtoLink = 'mailto:headshothedgehog@gmail.com' +
+                    '?subject=Anmeldung zum Eageltum' +
+                    '&body=Echter Name: ' + realname + '%0D%0A' +
+                    'Eagel-Name: ' + eagelname + '%0D%0A' +
+                    'Glaubensstatement: ' + statement + '%0D%0A' +
+                    'Newsletter: ' + newsletter;
+
+                window.location.href = mailtoLink;
+            }
+        </script>
+    </main>
+</body>
+
+<footer>
+    <p>
+        <a href="/join" style="color: #fff;">Trete dem Eageltum bei! Es ist sehr gut.</a><br />
+        &copy;
+        <script>document.write(new Date().getFullYear())</script> Eagel
+    </p>
+</footer>
+
+</html>

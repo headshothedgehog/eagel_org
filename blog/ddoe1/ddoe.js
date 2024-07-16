@@ -76,11 +76,11 @@ function showSlides(n) {
     if (n > Object.keys(ddoe).length) { slideIndex = 1 }
     if (n < 1) { slideIndex = Object.keys(ddoe).length }
     numberText.innerHTML = "" + slideIndex + "/" + (Object.keys(ddoe).length)
-    slideImg.setAttribute("src", "../../src/blog/ddoe1/" + ddoe[slideIndex]['fileName'])
+    slideImg.setAttribute("src", "/src/blog/ddoe1/" + ddoe[slideIndex]['fileName'])
     captionText.innerHTML = ddoe[slideIndex]['desc']
     if (Object.keys(ddoe[slideIndex]).includes('image')) {
         image = ddoe[slideIndex]['image']
-        captionText.innerHTML += "<br/><br/><img style='max-width: 50%' src='../../src/blog/ddoe1/" + image + "'/>"
+        captionText.innerHTML += "<br/><br/><img style='max-width: 50%' src='/src/blog/ddoe1/" + image + "'/>"
     }
     /*let i;
     let slides = document.getElementsByClassName("mySlides");

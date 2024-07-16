@@ -1,4 +1,4 @@
-var prevScrollpos = window.scrollY;
+/*var prevScrollpos = window.scrollY;
 window.onscroll = function () {
     var currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
@@ -7,4 +7,4 @@ window.onscroll = function () {
         document.getElementById("topnav").style.top = "-50px";
     }
     prevScrollpos = currentScrollPos;
-} 
+}*/
