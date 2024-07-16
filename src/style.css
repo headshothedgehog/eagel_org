@@ -350,7 +350,7 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-#numbertext {
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -456,24 +456,26 @@ footer {
     }
 
     .topnav .navlink {
-        font-size: 2rem;
+        font-size: 3rem;
+        padding: .8rem .8rem;
+        border-radius: .8rem;
     }
 
     .topnav img {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .blogGallery {
-        margin-top:1.5rem;
+        margin-top: 2rem;
     }
 
-    #numbertext {
+    .numbertext {
         color: #f2f2f2;
         font-size: 1.5rem;
         padding: 8px 12px;
         position: absolute;
-        top: 4rem;
+        top: 6rem;
         margin: .1rem;
         background-color: #00000090;
         border-radius: 10px;
@@ -506,11 +508,40 @@ footer {
         font-size: 1.7rem;
     }
 
+    #home-ddoe-textbox {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
     #home-ddoe-textdiv {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
 
     footer {
         font-size: 2rem;
+    }
+
+    .join-form {
+        margin-top: 4rem;
+    }
+
+    .gamepage {
+        margin-top: 3rem;
+    }
+    .games-selector {
+        margin-top: 3rem;
+    }
+
+    .propaganda {
+        margin-top: 4rem;
+    }
+
+    .textpage {
+        font-size: 2.5rem;
+    }
+    
+    .blogs {
+        font-size: 3rem;
     }
 }

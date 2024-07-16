@@ -46,7 +46,7 @@ function plusSlides(n) {
 function showSlides(n) {
     let slide = document.getElementById("slide");
     let captionText = document.getElementById("caption");
-    let numberText = document.getElementById("numbertext");
+    let numberText = document.getElementsByClassName("numbertext")[0];
     let slideImg = document.getElementById("slideimg");
     if (n > Object.keys(ddoe).length) { slideIndex = 1 }
     if (n < 1) { slideIndex = Object.keys(ddoe).length }
