@@ -149,6 +149,7 @@ var ddoe = {
     148: { fileName: 'natural_history.jpeg', desc: 'Eagel Update, Day 148:<br/>After visiting the natural history museum in Karlsruhe, we have some undeniable proof of ancient portrayals of the Eagel. [The water animals are "Seeigel" and "Igelfische"]', image: "148img.jpeg" },
     149: { fileName: 'dresses.jpeg', desc: 'Eagel Update, Day 149:<br/>The Eagel visited a collection of the wedding dresses of all maids and gentlemen, who could only wish to wed him. Poor maids (and Gentlemen). They had no idea, they would never be worthy candidates for being the spouse of the holy, one and only Eagel.' },
     150: { fileName: 'theater3.jpeg', desc: 'Eagel Update, Day 150:<br/>The Eagel went to watch a Theater Performance, which told the story of a glorious mighty hero on his journey of glory and revenge. Rumors say it might be inspired by a true story. Of course the Eagel rented the entire audience for himself only. He doesn\'t need to share his entertainment with peasants.' },
+    151: { fileName: 'pisa.jpeg', desc: 'Eagel Update, Day 151:<br/>The Eagel visited a place nearly as legendary as himself. The leaning tower of Pisa is almost leaning towards being worthy of the Eagel\'s presence. Yet, after a sudden earthquake it almost collapsed. Of course the Eagel committed a heroic act pushing the tower back to it\'s spot, saving hundreds of present peasants.' },
 }
 
 // n: { fileName: '.jpeg', desc: 'Eagel Update, Day n:<br/>', image: '' },
